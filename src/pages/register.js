@@ -66,23 +66,23 @@ export default class Register extends Component {
                             <div className="form-group">
                                 <div className="form-label-group">
                                     <input type="text" id="inputName" className="form-control" placeholder="name"  name="name" onChange={this.handleNameChange} required/>
-                                    <label htmlFor="inputName">Name</label>
+                                    <label htmlFor="inputName">Name:</label>
                                 </div>
                             </div>
 
                             <div className="form-group">
                                 <div className="form-label-group">
                                     <input id="inputEmail" className={"form-control " + (this.state.authError ? 'is-invalid' : '')} placeholder="Email address" type="text" name="email" onChange={this.handleEmailChange} autoFocus required/>
-                                    <label htmlFor="inputEmail">Email address</label>
+                                    <label htmlFor="inputEmail">Email address:</label>
                                     <div className="invalid-feedback">
-                                        Please provide a valid Email. or Email Exis
+                                        Please provide a valid Email. or Email Exists
                                     </div>
                                 </div>
                             </div>
                             <div className="form-group">
                                 <div className="form-label-group">
                                     <input type="password" className="form-control" id="inputPassword" placeholder="******"  name="password" onChange={this.handlePwdChange} required/>
-                                    <label htmlFor="inputPassword">Password</label>
+                                    <label htmlFor="inputPassword">Password:</label>
                                 </div>
                             </div>
 
